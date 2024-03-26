@@ -189,12 +189,12 @@ var packageDatabase = {
         gsm: 'NotApplicable'
     },
     
-    'email': {
-        name: 'name',
+    'oluokunshelter@gmail.com': {
+        name: 'Oluokun Shelter',
         gender: 'Female',
-        credential: '2024-01-20',
+        credential: '93135273UG',
         age: 2024-2001,
-        gsm: '09032215859'
+        gsm: '08186334827'
     },
     
     'email': {
