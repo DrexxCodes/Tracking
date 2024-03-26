@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSuccess Student Profile</title>
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Students Profile Database</h1>
+
+    </header>
+
+
+
+
+    <div class="container">
+        <h2>Retrieve Profile Credentials</h2>
+        <form id="trackingForm">
+            <label for="trackingType">Select Product Type:</label>
+            <select id="trackingType" name="trackingType" onchange="enableTrackingId()" required>
+                <option value="" disabled selected>Select Product Type</option>
+                <option value="tutorPoint">Edusucess student portal</option>
+            </select>
+
+            <label for="trackingId">Enter Your Email address:</label>
+            <input type="email" id="trackingId" name="trackingId" maxlength="50" oninput="limitProfilePin(this)" disabled required>
+
+            <br><br><br>
+
+            <div id="result"></div>
+
+            <br><br><br>
+            
+            <button type="button" onclick="trackPackage()" id="getCredentialsBtn" disabled>Retrieve Credentials</button>
+            <button type="button" onclick="copyCredentials()" class="copy-button" id="copyCredentialsBtn" disabled>Copy Credentials</button>
+
+        </form>
+
+    </div>
+
+
+    <div class="faq-head">
+        FAQs
+    </div>
+
+    <div class="faq" id="faq1">
+        <div class="faq-question" onclick="toggleFAQ('faq1')">How do I access my portal?</div>
+        <div class="faq-answer">To access the portal, you need to click on the "Copy Credentials" button and then click the search icon on the top menu deck and type in your email address, then you will be asked for an access password which is the credentials you just copied here.</div>
+    </div>
+
+    <div class="faq" id="faq2">
+        <div class="faq-question" onclick="toggleFAQ('faq2')">What can I do if my details are absent or incorrect?</div>
+        <div class="faq-answer">It is important to note that the details that are shown here are directly imported from the registration form or from the payment summary on the telegram bot. Also note that if you haven't paid the activation fee you can't see your name here. So if you have issues with your name please contact us to rectify.</div>
+    </div>
+
+    <div class="faq" id="faq3">
+        <div class="faq-question" onclick="toggleFAQ('faq3')">Who can view my portal?</div>
+        <div class="faq-answer">Anyone with your credentials can view your portal so don't disclose to others. </div>
+    </div>
+
+    <div class="faq" id="faq4">
+        <div class="faq-question" onclick="toggleFAQ('faq4')">How to revoke a credential?</div>
+        <div class="faq-answer">You may request a new credential if you feel the current one is compromised, simply head to the telegram bot and fill out a revoke form and having answered a few questions we shall revoke your credential and issue you a new one. Reinstating typically takes 3-8 hours. </div>
+    </div>
+
+    <div class="faq" id="faq5">
+        <div class="faq-question" onclick="toggleFAQ('faq5')">What will the portal contain?</div>
+        <div class="faq-answer">The portal will be used to get your scores for tests and where applicable the answers you have chosen as well as the correct ones. The portal will also be used to show all transactions you have made on Edusucess.</div>
+    </div>
+
+    <div class="faq" id="faq6">
+        <div class="faq-question" onclick="toggleFAQ('faq6')">How can I fund my account to pay for tests?</div>
+        <div class="faq-answer">You may use the Telegram bot to fund your account or make a transfer of the ammount to the account that is shown on the bot.</div>
+    </div>
+
+    <div>
+        <p>If you do not see your credentials, please initiate a live chat with us.</p>
+    </div>
+
+    <footer>
+        <marquee direction="left" scrollamount="3">
+            Access password is the same as credentials.
+        </marquee>
+    </footer>
+
+
+
+
+
+    <script src="scripts/packageDatabase.js"></script>
+    <script src="scripts/source.js"></script>
+
+</body>
+
+</html>

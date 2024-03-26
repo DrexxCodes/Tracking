@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ff7f00;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+header:active {
+    background: aqua;
+}
+
+
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-top: 20px;
+}
+
+.container:hover {
+    background: lightsalmon;
+}
+
+#ballImage {
+    width: 100px;
+    /* Adjust the size as needed */
+    height: 100px;
+    /* Adjust the size as needed */
+    margin: 30px 30px 0 30px;
+    /* Adjust the margin as needed */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: grey;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+#result:hover {
+    background: #e66000;
+    color: white;
+}
+
+button:disabled {
+    background-color: grey;
+    cursor: wait;
+}
+
+button:disabled:hover {
+    background-color: grey;
+}
+
+.copy-button {
+    background-color: #ff7f00;
+    /* Orange color same as header */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: #e66000;
+    /* Darker orange on hover */
+}
+
+footer {
+    background: #ff7;
+    cursor: pointer;
+    padding: 10px;
+    width: 90%;
+    bottom: 0;
+}
+
+.faq-head {
+    color: black;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    opacity: 70%;
+
+}
+
+.faq {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid orange;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    background: #ff7f00;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    display: inline-block;
+}
+
+.faq-answer {
+    margin-top: 6px;
+    display: none;
+}
+
+.faq-answer.show {
+    display: block;
+    color: black;
+}
